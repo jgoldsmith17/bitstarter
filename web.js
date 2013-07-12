@@ -5,7 +5,7 @@ var output = fs.readFileSync('index.html', 'utf8');
 
 
 app.get('/', function(request, response) {
-  response.send('index.html');
+  response.send(output);
 });
 
 //buf = new Buffer(256);
