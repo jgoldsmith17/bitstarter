@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 //len = buf.write('\u00bd + \u00bc = \u00be', 0);
 //console.log(len + " bytes: " + buf.toString('utf8', 0, len));
 var output = fs.readFileSync('index.html','utf8');
-console.log(output);
+response.send(output);
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
