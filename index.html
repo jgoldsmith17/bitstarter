@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet"
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">    
-    <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
                                              
@@ -25,10 +25,19 @@
      }                                                                               
      .linediv-r {                                                                    
      border-left: 1px solid white;                                                   
-     }                                                                               
+     }    
+
 }                                                                                    
      /* Landscape phones and down */                                                 
-     @media (max-width: 480px) {                                                     
+     @media (max-width: 480px) {
+
+    .statistics {
+        text-align: center;
+     }  
+     .video {
+        margin-bottom: 10px;
+     }
+
      .copy {                                                                         
      padding: 2.5% 10%;                                                              
      }                                                                               
@@ -41,7 +50,11 @@
 }                                                   
  /* All form factors */                                                          
                                                                                      
-     /* Main body and headings */                                                    
+     /* Main body and headings */
+
+     div.span5 {
+        max-width: 480px;
+     }                                                    
      body {                                                                          
      font-family: 'Open Sans', Helvetica, Arial, sans-serif;                         
      }                                                                               
@@ -57,8 +70,9 @@
      p {                                                                             
      font-size: 15px;                                                                
      line-height: 24px;                                                              
-     }                                                                               
-                                                                                     
+     }  
+                                                                        
+    /*                                                                              
      body {                                                                          
       padding-top: 20px;                                                            
       padding-bottom: 40px;                                                          
@@ -86,7 +100,8 @@
       }                                                                              
       div.row {                                                                      
       border: 1px solid;                                                             
-      }                                                                              
+      }   
+      */                                                                           
                                                                                      
     /* Video pitch and Action */                                                 
     .pitch {                                                                     
@@ -108,7 +123,7 @@
     padding-bottom: 2.5%;                                                        
     text-align: justify;                                                         
     }                                                                            
-    .asset {                                                                     
+    .asset, {                                                                     
     padding: 2.5% 0%;                                                            
     }                                                                            
     .footer {                                                                    
@@ -151,7 +166,7 @@
         <div class="row-fluid subheading">                                                   
             <div class="span12">
 
-                <h1>Product</h1>                                                               
+                <h1>Muzik</h1>                                                               
                                                     
             </div>                                                                           
         </div>                                                                             
@@ -159,13 +174,13 @@
 
             <div class="span12">
 
-            <p class="lead">One sentence description.</p>
+            <p class="lead">A cross-cultural exchange</p>
         </div>
     </div>
     <div class="row-fluid pitch">
 
             <div class="span5 offset1 video">                                                  
-                <img class="img-polaroid" src="http://placehold.it/480x320">                     
+                <img src="http://i.imgur.com/Fsx5bE6.png" title="Hosted by imgur.com" />                     
             </div>                                                                           
                                                                                      
     <div class="span5 actions">                                                        
@@ -213,11 +228,17 @@
                                                                                      
     <div class="row-fluid section1">                                             
         <div class="span5 offset1 asset">                                          
-            <img class="img-polaroid" src="http://placehold.it/480x300">             
+            <a href="http://imgur.com/R86rQdZ"><img src="http://i.imgur.com/R86rQdZ.png" title="Hosted by imgur.com" /></a>            
         </div>                                                                   
         <div class="span5 copy">                                                   
-            <p>                                                           
-              Paragraph 1                                                            
+            <blockquote>                                                       
+              “Music is the great uniter. An incredible force. Something that people who differ on everything and anything else can have in common.”<br/>
+              <span style="text-indent: 20px;margin-bottom: 15px">― Sarah Dessen, Just Listen                                             
+            </span>
+            </blockquote>
+            
+            <p>                                                            
+              Music provides a universal connection. What if we could further bridge the gap between cultures through the power of music? Muzik helps you easily discover foreign music you will like and in the process facilitates conversations with people across the globe.                                                           
             </p>                                                                   
         </div>                                                                   
     </div>                 
@@ -225,12 +246,16 @@
 
     <div class="row-fluid section1">                                             
         <div class="span5 offset1 copy copy-right">                                
-            <p>                                                            
-              paragraph 2                                                            
-            </p>                                                                   
+            <h3>Evidence:</h3>
+            <p>Listening to music of another language can help you <a href="http://www.telegraph.co.uk/science/science-news/10188533/Singing-can-help-when-learning-a-foreign-language.html">learn a new language faster</a>, improve your <a href="http://mste.illinois.edu/courses/ci407su02/students/stansell/Literature%20Review%201.htm">foreign accent</a>, and understand the underpinnings of other cultures. 
+
+            <p><a href="http://www.wikihow.com/Learn-a-Language-by-Listening-to-the-Radio">Learning a language through listening to music isn’t a new concept:</a>
+            </p>
+    
+                                                                   
         </div>                                                                   
         <div class="span5 asset">                                                  
-            <img class="img-polaroid" src="http://placehold.it//480x300">            
+            <a href="http://imgur.com/dcBnFcs"><img src="http://i.imgur.com/dcBnFcs.png" title="Hosted by imgur.com" /></a>            
         </div>
     </div>                                                                   
                                                                                      
